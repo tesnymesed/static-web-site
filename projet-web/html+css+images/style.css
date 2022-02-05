@@ -1,0 +1,298 @@
+/*styles pour le container qui comporte le content(main + nav), nav et footer*/
+#container {
+  background: #ffffff;
+  width:100%;    
+}
+/*styles pour le header*/
+#header {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  box-shadow: silver ;
+  border-bottom:1px solid silver ;
+  padding-bottom: 5px;
+  background-color: goldenrod;
+  box-shadow:0 2px 10px silver ;
+}
+
+/*styles pour le nav*/
+#nav {
+
+  margin-top: 15px;
+  margin-bottom: 12px;
+  border-top:1px solid silver ;
+  border-bottom:1px solid silver ;
+  padding-bottom:12px ;
+  padding-top:12px ;
+  box-shadow: 0 2px 10px silver;   
+}
+
+/*styles pour le main le bloc qui se trouve a l'interieure du content */
+#main {
+  width: 69%;
+  float: left;
+  border: 1px solid silver;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  clear: both;
+  box-shadow: 0 2px 10px silver;       
+}
+
+/*styles pour le "aside" qui se trouve a l'interieure du "content"*/
+#aside {
+  float: right;
+  width: 29%;
+  border:1px solid silver ;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px silver;   
+}
+
+/*styles pour le footer qui se trouve tout en bas, qui est une partie du content */
+#footer{ 
+  clear:both;
+  margin: 15px;
+  height: 200px;
+  box-shadow: 0 2px 10px silver;   
+  background-color: goldenrod;
+  box-shadow: 0 2px 10px silver;   
+}
+
+/*styles attribuer au titre qui se trouve tout en haut de la page ici "ZAHA HADID"*/
+.titre  {
+  font-weight: bold;
+  font-style: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+/*styles attribuer au sous titre qui est ici "z.h architects"*/
+.soustitre{
+  font-style: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  vertical-align: middle ;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/*styles attribuer aux liens des pages*/
+.lien{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:black;
+  font-size: large;
+  text-decoration: none;
+  vertical-align: middle;   
+}
+
+/*pour changer de couleur dans le cas ou on passe la souris en dessus des liens*/
+a:hover {
+  color:silver;
+
+}
+
+/*pour ajuster les images,paragraphes ou/et titre dans la page j'ai eu besoin de decaler soit a 
+droite ou/et a gauche (left-margin et right-margin ) , space pour entre les mots */
+.left-margin{
+  margin-left: 30%;
+}
+
+.right-margin{
+  margin-right: 30%;
+}
+
+.space{
+  margin-right: 5%;
+}
+
+
+/*slider slides slide ces trois classes je l'ai utilisé pour le diaporama dans la 1ere page(acceuil)*/
+/*slider pour le support qui va porter toutes les images qui defilent*/
+.slider{
+  width: 900px;
+  overflow: hidden;
+  margin:10px;
+  box-shadow: 0 2px 10px silver;   
+ 
+  
+}
+
+/* slides qui est toutes les images */
+.slides{
+  width: calc(900px*4);
+  animation: glisse 30s infinite;
+ 
+}
+
+/*slide l'image qui defile*/
+
+.slide{
+  
+  float: left;
+  clear: right;
+
+}
+
+/*comment les images doivent defiler, le tour de chacune*/
+@keyframes  glisse{
+  0% {
+    transform: translateX(0);
+  }
+
+
+  25%
+  {
+    transform: translateX(-900px);
+  }
+  50% {
+    transform: translateX(-1800px);
+  }
+ 
+  75% {
+    transform: translateX(-2700px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+/*style attribuer titre aside  */
+.titre-aside{
+
+  text-align: center ;
+  color: goldenrod;
+  padding: 5px;
+  border-bottom: 1px solid silver;
+  margin:1px;
+  height: 10%;
+  display: -moz-grid-line;
+  box-shadow: 0 2px 10px silver;   
+
+}
+
+/*styles pour les sous aside les bloc qui compose le aside */
+.sous-aside{
+  text-align: center;
+  border-bottom:1px solid silver ; 
+  padding-bottom: 20px;
+  margin-top: 10px;
+  height: 30%;
+   
+}
+/*styles attribuer aux liens qui se trouvent dans le aside*/
+.lien-aside{
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:black;
+  font-size: large;
+  text-decoration: none;
+  
+}
+  
+/*styles pour un trait normal*/
+.trait{
+  
+  border-top:1px solid silver ;
+  width:500px;
+  margin: 5px;
+  padding: bottom 15px; 
+  clear: both;
+   
+}
+
+
+.px-space{
+margin-left: 5px;
+}
+
+/*styles pour tous les paragraphes*/
+
+p {
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+
+}
+/*styles pour les listes non ordonnées*/
+ul
+{
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+
+}
+
+/* styles pour les textes du footer*/
+.p-center{
+  text-align: center;
+}
+
+.p-footer{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/*styles pour  le paragraphe qui est dans la page carriere*/
+.description-carriere{ 
+  margin: 5px;
+  width: 60%;
+  float: left;
+  clear: both; 
+}
+
+/*styles pour toutes les images que j'ai rajouté dans la pages projets*/
+.img-projet{
+  float: left;
+  width: 30%;
+  margin: 5px;
+  clear: both;
+  box-shadow: 0 2px 10px silver;   
+}
+
+/*styles pour toutes les images que j'ai rajouté dans la page publications*/
+.img-pub{
+  float: left;
+  width: 30%;
+  margin: 5px;
+  margin-top:40px ;
+  clear: both; 
+}
+
+/*styles pour toutes les images */
+img{
+  box-shadow: 0 2px 10px silver;    
+}
+
+/*styles pour les titres des projets */
+.titre-projet{
+  color: darkgoldenrod;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 1px;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/*styles pour les paragraphes dans les descriptions des publications*/
+.p-pub{
+  width: 60%;
+  float: left;
+}
+
+.marginleft5px{
+  margin-left: 5px;
+}
+
+h2{
+  margin-left: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 20px;
+}
